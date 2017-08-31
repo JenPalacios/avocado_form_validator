@@ -1,0 +1,12 @@
+{
+  "src": {
+    "pug": "./src/views/**/*.pug",
+    "styles": "./src/styles/*.sass",
+    "scripts": "./src/js/index.js"
+  },
+  "dist" : {
+    "html": "./",
+    "css": "./",
+    "js": "./"
+  }
+}

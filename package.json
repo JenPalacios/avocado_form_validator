@@ -1,0 +1,27 @@
+{
+  "name": "avocado_form_validator",
+  "version": "1.0.0",
+  "description": "A small library to validate forms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JenPalacios/avocado_form_validator.git"
+  },
+  "author": "Jen Palacios",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JenPalacios/avocado_form_validator/issues"
+  },
+  "homepage": "https://github.com/JenPalacios/avocado_form_validator#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  }
+}
