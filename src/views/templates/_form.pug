@@ -1,0 +1,46 @@
+form
+  .penny--form--group
+    input.form--radio(type="radio" name="gender" value="f" id="registration-gender-f")
+    label(for="registration-gender-f") Frau
+    input.form--radio(type="radio" name="gender" value="m" id="registration-gender-m")
+    label(for="registration-gender-m") Herr
+    .form--error--message Bitte wähle ein Geschlecht.
+  .penny--form--group
+    input.required--field(type="text" placeholder="Vorname*" name="first_name" id="first_name")
+    .form--error--message Bitte gib deinen Vornamen ein.
+  .penny--form--group
+    input.required--field(type="text" placeholder="Nachname*" name="last_name" id="last_name")
+    .form--error--message Bitte gib deinen Nachnamen ein.
+  .penny--form--group
+    input.required--field(type="email" placeholder="E-Mail-Adresse*" name="email" id="email")
+    .form--error--message Bitte gib deine E-Mail-Adresse an.
+  .penny--form--group
+    input.required--field(type="email" placeholder="E-Mail-Adresse bestätigen*" name="email_confirm" id="email-confirm")
+    .form--error--message Bitte überprüfe die Bestätigung deiner E-Mail-Adresse.
+  .penny--form--group
+    input.required--field(type="text" placeholder="PLZ*" name="zip_code" id="zip-code")
+    .form--error--message Bitte gib deine Postleitzahl an.
+  .penny--form--group
+    input.required--field(type="text" placeholder="Ort*" name="city" id="city")
+    .form--error--message Bitte gib deinen Wohnort ein.
+  .penny--form--group
+    input.required--field(type="password" placeholder="Passwort*" name="password" id="password" )
+    .form--error--message Bitte vergib ein Passwort.
+  .penny--form--group
+    input.required--field(type="password" placeholder="Passwort wiederholen*" name="password_confirm" id="password-confirm")
+    .form--error--message Dein Passwort ist nicht übereinstimmend
+  .penny--form--group
+    label Geburstag
+    input.required--field(type="number" placeholder="Tag*" name="day" id="day" maxlength="2")
+    input.required--field(type="number" placeholder="Monat*" name="month" id="month" maxlength="2")
+    input.required--field(type="number" placeholder="Jahr*" name="year" id="year" maxlength="4")
+    .form--error--message Bitte gib dein Geburtsdatum an.
+  .penny--form--group
+    input(type="checkbox" name="terms" id="registration-terms")
+    label(for="registration-terms") Ich habe die #[a.text__link(href="#" target="_blank") Teilnahmebedingungen] und die #[a.text__link(href="https://www.penny.de/unternehmen/datenschutz/" target="_blank") Datenschutzbestimmungen] gelesen und stimme zu.*
+    .form--error--message Bitte stimme der Datenschutzerklärung und den Teilnahmebedingungen zu.
+  .penny--form--group
+    input(type="checkbox" name="newsletter" id="registration-newsletter" data-success-tracking="registrierung_box_newsletter-optin")
+    label(for="registration-newsletter") Ja, ich möchte den PENNY Newsletter abonnieren.
+  .penny--form--group
+    input(type="submit" value="Jetzt registrieren")

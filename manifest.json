@@ -1,6 +1,7 @@
 {
   "src": {
-    "pug": "./src/views/**/*.pug",
+    "pug": "./src/views/*.pug",
+    "pugs": "./src/views/**/*.pug",
     "styles": "./src/styles/*.sass",
     "scripts": "./src/js/index.js"
   },

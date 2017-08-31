@@ -63,7 +63,8 @@ gulp.task('sass', function () {
 // --------------------------------------
 gulp.task('watch', function () {
   gulp.watch(manifest.src.styles, ['sass']);
-  gulp.watch(manifest.src.pug, ['pug']);
+  gulp.watch(manifest.src.pugs, ['pug']);
+  gulp.watch(manifest.src.scripts, ['js']);
 });
 
 gulp.task('build', ['sass', 'pug']);
